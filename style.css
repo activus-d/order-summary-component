@@ -146,16 +146,38 @@ p {
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
 
-/************************************
-STYLES FOR MOBILE VIEW
-************************************/
-@media all and (max-width: 38rem) {
+/**************************************
+STYLES FOR TABLET-DISPLAY & MOBILE VIEW
+**************************************/
+@media all and (max-width: 620px) {
+    main {
+        height: 100vh;
+    }
+    .container {
+        height: 85%;
+        width: 50%;
+    }
+}
+
+@media all and (max-width: 380px) {
     main {
         height: 100vh;
     }
     .container {
         height: 78%;
         width: 75%;
+    }
+}
+@media all and (max-width: 280px) {
+    main {
+        height: 100vh;
+    }
+    .container {
+        height: 90%;
+        width: 90%;
+    }
+    .secondPart div:nth-of-type(2) img {
+      display: none;
     }
 }
 
