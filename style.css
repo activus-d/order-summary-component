@@ -16,7 +16,7 @@ LAYOUT
 ************************************/
 main {
     max-width: 100%;
-    height: 67rem;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -43,10 +43,12 @@ ADDITIONAL STYLES
 ************************************/
 main {
     position: relative;
-    /* background-image: url(images/pattern-background-desktop.svg);
-    background-size: contain; */
+     background-image: url(images/pattern-background-desktop.svg);
+    background-size: 100% 45%;
+    background-repeat: no-repeat;
+    background-color: hsl(225, 100%, 94%);
 }
-main::before {
+/* main::before {
     content: "";
     position: absolute;
     bottom: 25%;
@@ -68,7 +70,7 @@ main::after {
     background-repeat: no-repeat;
     transform: rotate(180deg);
     overflow: hidden;
-}
+} */
 .firstPart {
     background-image: url(images/illustration-hero.svg);
     background-size: cover;
