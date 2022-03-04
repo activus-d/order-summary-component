@@ -152,9 +152,6 @@ p {
 STYLES FOR TABLET-DISPLAY & MOBILE VIEW
 **************************************/
 @media all and (max-width: 620px) {
-    main {
-        height: 100vh;
-    }
     .container {
         height: 85%;
         width: 50%;
@@ -162,18 +159,12 @@ STYLES FOR TABLET-DISPLAY & MOBILE VIEW
 }
 
 @media all and (max-width: 380px) {
-    main {
-        height: 100vh;
-    }
     .container {
         height: 78%;
         width: 75%;
     }
 }
 @media all and (max-width: 280px) {
-    main {
-        height: 100vh;
-    }
     .container {
         height: 90%;
         width: 90%;
