@@ -8,21 +8,22 @@ html{
     font-size: 62.5%;
 }
 body {
-    max-width: 144rem;
     font-family: 'Red Hat Display', sans-serif;
 }
 /************************************
 LAYOUT
 ************************************/
+body {
+    height: 100vh
+}
 main {
-    max-width: 100%;
-    height: 100vh;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .container {
-    height: 45rem;
+    height: 40rem;
     width: 30rem;
     display: flex;
     flex-direction: column;
@@ -41,8 +42,7 @@ main {
 /************************************
 ADDITIONAL STYLES
 ************************************/
-main {
-    position: relative;
+body {
      background-image: url(images/pattern-background-desktop.svg);
     background-size: 100% 45%;
     background-repeat: no-repeat;
@@ -148,29 +148,14 @@ p {
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
 
-/**************************************
-STYLES FOR TABLET-DISPLAY & MOBILE VIEW
-**************************************/
-@media all and (max-width: 620px) {
-    .container {
-        height: 85%;
-        width: 50%;
-    }
-}
+/************************************
+STYLES FOR MOBILE VIEW
+************************************/
 
 @media all and (max-width: 380px) {
+    
     .container {
-        height: 78%;
-        width: 75%;
+        height: 50rem;
+        width: 25rem
     }
 }
-@media all and (max-width: 280px) {
-    .container {
-        height: 90%;
-        width: 90%;
-    }
-    .secondPart div:nth-of-type(2) img {
-      display: none;
-    }
-}
-
